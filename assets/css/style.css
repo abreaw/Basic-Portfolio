@@ -1,0 +1,78 @@
+body
+{
+	/* set font style & color */
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+
+	/* set margins and padding around the body area */
+	margin: 150px 450px 0px 150px;  /* top margin set below header area, right set to line up with nav right side, bottom (needs to be set to allow for footer area), left set to line up with nameBox area */
+	padding: 20px;
+}
+
+
+header
+{
+	background-color: #ffffff;  /* set background color for header area to white */
+	border-bottom: 2px solid #cccccc;  /* set bottom border to 2 pixels w/ a solid border & color of gray */
+	
+	/* position the header to the top of the browser page */
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+
+	/* make the header span the full width of the page */
+	width: 98%;	
+
+	/* add a small left & right margin to the header area */
+	margin: 0px 15px;
+}
+
+h1
+{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+a
+{
+	color: #777777;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nameBox
+{
+	color: #ffffff;
+	background-color: #4aaaa5;
+	padding: 30px 50px;
+	display: inline-block;
+	position: relative;
+	left: 150px;
+	margin: 20px 0px 0px 0px;
+}
+
+.navArea
+{
+	
+	/* position navArea to the right at the position relative to the #'s shown */
+	float: right;
+	position: relative;
+	right: 450px;
+	top: 50px;
+	
+	/* give the navArea box some top & bottom padding */ 
+	padding: 10px 0px;
+
+	
+	
+	/*font-size: 24px;*/
+	/*text-align: center;*/
+
+}
+
+.container
+{
+	/*clear: both;*/
+	/*display: block;*/
+}
