@@ -36,10 +36,10 @@ header
 h1, h2
 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
-
+	color: #4aaaa5;
 }
 
-a
+.navLinks
 {
 	color: #777777;
 	padding: 10px;
@@ -134,9 +134,9 @@ a
 {
 	background-color: #ffffff;  /* set background color for header area to white */
 	border-bottom: 3px solid #cccccc;  /* set bottom border to 2 pixels w/ a solid border & color of gray */
-	padding: 20px 0px;
+	padding: 20px 0px;  /* add padding to the top & bottom areas */
 
-	color: #4aaaa5;
+	color: #4aaaa5;  /* set font color */
 
 	/*position: relative;*/
 	/*left: 150px;*/
@@ -144,15 +144,18 @@ a
 	
 }
 
-img
+#profilePic
 {
 	float: left;
+	/*display: inline;*/
 	/*margin: 0px 10px 0px 0px;*/
 	margin-right: 20px;
 }
 
 p
 {
+	/*float: left;*/
+	/*display: inline;*/
 	/*margin: 10px;*/
 	padding: 0px 10px;
 	line-height: 150%;
@@ -178,6 +181,12 @@ p
 
 }
 
+.socialImages
+{
+	padding: 0px;
+	margin: 0px;
+}
+
 .socialContentHeading
 {
 	text-align: center;
@@ -186,7 +195,27 @@ p
 	/*padding: 0px 20px 20px 20px;*/
 	padding-bottom: 20px;
 
+	/*width: 100%;*/
+
 }
+
+.stackOverflowIcon
+{
+	/*float: right;*/
+	/*padding-top: 10px;*/
+	/*margin-top: 2px;*/
+}
+
+a.socialImages
+{
+	/*padding: 0px;*/
+}
+
+img.socialImages
+{
+	/*margin-right: 0px;*/
+}
+
 
 footer
 {
