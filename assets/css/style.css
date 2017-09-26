@@ -117,7 +117,7 @@ h1, h2
 	/*margin: 40px 0px 112px 0px;*/
 	margin: 40px 0px 40px 0px;
 
-	padding: 0px 20px 20px 20px;
+	padding: 0px 30px 20px 30px;
 
 	position: relative;
 	left: 150px;
@@ -160,6 +160,64 @@ p
 	padding: 0px 10px;
 	line-height: 150%;
 	/*font-weight: bold;*/
+}
+
+.portfolioImages
+{
+	
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+
+	/* set this position property to relative to make the label element class be placed relative to this element */
+	position: relative;
+
+}
+
+.portfolioLabels
+{
+	color: #ffffff;
+	background-color: #4aaaa5;
+	text-align: center;
+	padding: 15px 0px;  /* put some space around the wording (content) and the background box */
+	opacity: 0.9;  /* make the label a little see through */
+
+	/* take out the other margins set previously for the h2 elements */
+	margin: 0px;
+
+	/* set this position property to allow the label to move to a position that is relative to it's ancestor (the image section) */
+	position: absolute;
+	bottom: 20px;  /* put it 40px above the bottom of the ancestor element */
+	width: 100%;	/* span the full width of the ancestor element */
+
+}
+
+.contactForm label
+{
+	line-height: 150%;
+	/*padding: 20px 0px 20px 0px;*/
+	/*margin: 20px 0px 20px 0px;*/
+
+	
+}
+
+.contactForm input
+{
+	line-height: 150%;
+	padding: 5px;
+	margin: 2px 40px 10px 0px;
+	width: 98%
+}
+
+.contactForm textarea
+{
+	/*line-height: 150%;*/
+	/*padding: 20px 0px 20px 0px;*/
+	margin: 2px 0px 10px 0px;
+	width: 98%;
+	height: 200px;
+	overflow: auto;
 }
 
 .socialContent
