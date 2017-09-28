@@ -47,6 +47,12 @@ h1, h2
 	font-weight: bold;
 }
 
+.navLinks:hover
+{
+	background-color: #777777;
+	color: white;
+}
+
 .nameBox
 {
 	color: #ffffff;
@@ -145,8 +151,6 @@ h1, h2
 
 	/*position: relative;*/
 	/*left: 150px;*/
-
-	
 }
 
 #profilePic
@@ -157,21 +161,38 @@ h1, h2
 	margin-right: 20px;
 }
 
+#profilePic:hover
+{
+	border: 5px solid #4aaaa5;
+}
+
 p
 {
 	/*float: left;*/
-	/*display: inline;*/
-	/*margin: 10px;*/
-	padding: 0px 10px;
+	display: inline;
+	/*margin: 0px;*/
+	padding: 0px 5px;
 	line-height: 150%;
 	/*font-weight: bold;*/
+}
+
+ul
+{
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 0px;
+	padding-left: 10px;
+}
+
+blockquote
+{
+	font-weight: bold;
+	text-shadow: 2px 2px #BBFFFB;
 }
 
 /* don't need this anymore */
 .portfolioImages
 {
-	
-	float: left;
 	margin-right: 60px; /*40px*/
 	margin-bottom: 30px; /*30px*/
 	margin-top: 10px;
@@ -187,15 +208,7 @@ p
 {
 	
 	float: left;
-	margin-right: 60px; /*40px*/
-	margin-bottom: 30px; /*30px*/
-	margin-top: 10px;
-
-	/*width: 50%;*/
-
-	/* set this position property to relative to make the label element class be placed relative to this element */
-	position: relative;
-
+	
 }
 
 .portfolioImagesRight
@@ -203,14 +216,7 @@ p
 	
 	float: right;
 	margin-right: 30px; /*40px*/
-	margin-bottom: 30px; /*30px*/
-	margin-top: 10px;
-
-	/*width: 50%;*/
-
-	/* set this position property to relative to make the label element class be placed relative to this element */
-	position: relative;
-
+	
 }
 
 .portfolioLabels
@@ -269,6 +275,12 @@ button
 	text-align: center;
 	font-size: 16px;
 	
+}
+
+button:hover
+{
+	background-color: #6FFFF7;
+	color: #777777;
 }
 
 .socialContent
