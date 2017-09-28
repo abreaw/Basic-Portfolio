@@ -8,10 +8,8 @@ body
 	margin: 150px 450px 0px 150px;  /* top margin set below header area, right set to line up with nav right side, bottom (needs to be set to allow for footer area), left set to line up with nameBox area */
 	padding: 20px;
 
+	/* set width of body area */
 	width: 960px;
-
-	/*background-image: url("sayagata-400px.png");*/
-
 }
 
 
@@ -188,6 +186,8 @@ blockquote
 {
 	font-weight: bold;
 	text-shadow: 2px 2px #BBFFFB;
+	text-align: center;
+	padding-top: 20px;
 }
 
 /* don't need this anymore */
@@ -256,8 +256,8 @@ blockquote
 
 .contactForm textarea
 {
-	/*line-height: 150%;*/
-	/*padding: 20px 0px 20px 0px;*/
+	line-height: 150%;
+	padding: 5px;
 	margin: 2px 0px 10px 0px;
 	width: 98%;
 	height: 200px;
