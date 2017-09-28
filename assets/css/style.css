@@ -167,13 +167,46 @@ p
 	/*font-weight: bold;*/
 }
 
+/* don't need this anymore */
 .portfolioImages
 {
 	
 	float: left;
-	margin-right: 40px;
-	margin-bottom: 30px;
+	margin-right: 60px; /*40px*/
+	margin-bottom: 30px; /*30px*/
 	margin-top: 10px;
+
+	/*width: 50%;*/
+
+	/* set this position property to relative to make the label element class be placed relative to this element */
+	position: relative;
+
+}
+
+.portfolioImagesLeft
+{
+	
+	float: left;
+	margin-right: 60px; /*40px*/
+	margin-bottom: 30px; /*30px*/
+	margin-top: 10px;
+
+	/*width: 50%;*/
+
+	/* set this position property to relative to make the label element class be placed relative to this element */
+	position: relative;
+
+}
+
+.portfolioImagesRight
+{
+	
+	float: right;
+	margin-right: 30px; /*40px*/
+	margin-bottom: 30px; /*30px*/
+	margin-top: 10px;
+
+	/*width: 50%;*/
 
 	/* set this position property to relative to make the label element class be placed relative to this element */
 	position: relative;
@@ -194,7 +227,7 @@ p
 	/* set this position property to allow the label to move to a position that is relative to it's ancestor (the image section) */
 	position: absolute;
 	bottom: 20px;  /* put it 40px above the bottom of the ancestor element */
-	width: 100%;	/* span the full width of the ancestor element */
+	width: 110%;	/* span the full width of the ancestor element */
 
 }
 
@@ -278,12 +311,6 @@ button
 #stackOverflowIcon
 {
 	margin-bottom: 5px;
-}
-
-.contactInfo
-{
-	text-align: center;
-	margin: 5px 0px;
 }
 
 a.socialImages
