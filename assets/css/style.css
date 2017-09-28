@@ -29,11 +29,12 @@ header
 
 	/* add a small left & right margin to the header area */
 	margin: 0px 15px;
+
 }
 
 h1, h2
 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
@@ -64,6 +65,7 @@ h1, h2
 	position: relative;
 	left: 150px;
 	margin: 20px 0px 0px 0px;
+	font-size: 2em;
 }
 
 .navArea
@@ -151,6 +153,8 @@ h1, h2
 
 	color: #4aaaa5;  /* set font color */
 
+	font-size: 2em;
+
 	/*position: relative;*/
 	/*left: 150px;*/
 }
@@ -171,19 +175,27 @@ h1, h2
 p
 {
 	/*float: left;*/
-	display: inline;
+	display: block;
 	/*margin: 0px;*/
 	padding: 0px 5px;
+	padding-top: 8px;
 	line-height: 150%;
-	/*font-weight: bold;*/
 }
 
 ul
 {
+	list-style: disc;
 	display: inline-block;
+	/*line-height: 150%;*/
 	margin-left: 10px;
 	margin-top: 0px;
-	padding-left: 10px;
+	padding: 2px 6px;
+	padding-left: 12px;
+}
+
+li
+{
+	padding: 0px 0px 2px 6px;
 }
 
 blockquote
@@ -315,7 +327,7 @@ button:hover
 .socialContentHeading
 {
 	text-align: center;
-	font-size: 110%;
+	font-size: 130%;
 	border-bottom: 2px solid #cccccc;  /* set bottom border to 2 pixels w/ a solid border & color of gray */
 	/*padding: 0px 20px 20px 20px;*/
 	padding-bottom: 20px;
