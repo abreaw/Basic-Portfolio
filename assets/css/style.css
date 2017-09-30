@@ -15,6 +15,7 @@ body
 
 header
 {
+	/* set background & border for the header area of the pages */
 	background-color: #ffffff;  /* set background color for header area to white */
 	border-bottom: 2px solid #cccccc;  /* set bottom border to 2 pixels w/ a solid border & color of gray */
 	
@@ -24,7 +25,7 @@ header
 	left: 0px;
 	right: 0px;
 
-	/* make the header span the full width of the page */
+	/* make the header span the full width of the page minus the areas on the sides */
 	width: 98%;	
 
 	/* add a small left & right margin to the header area */
@@ -34,33 +35,43 @@ header
 
 h1, h2
 {
+	/* set up size & font styles for the heading tags */
 	font-size: 1.5em;
 	font-weight: bold;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
+
+	/* add padding & margins to heading tag elements */
 	padding: 20px 0px;
 	margin: 25px 0px;
 }
 
+/* class to setup styles for navigation links at the top of the page */
 .navLinks
 {
+	/* set color and style for nav links */
 	color: #777777;
-	padding: 10px;
 	text-decoration: none;
 	font-weight: bold;
+
+	padding: 10px;
 }
 
+/* set changes for when user hovers over the navigation links */
 .navLinks:hover
 {
 	background-color: #777777;
 	color: white;
 }
 
+/* styles for box with name at the top of the page */
 .nameBox
 {
 	color: #ffffff;
 	background-color: #4aaaa5;
 	padding: 31px 50px;
+
+	/* set properties to place the name box on the header */
 	display: inline-block;
 	position: relative;
 	left: 150px;
@@ -68,9 +79,9 @@ h1, h2
 	font-size: 2em;
 }
 
+/* container for navigation links box */
 .navArea
 {
-	
 	/* position navArea to the right at the position relative to the #'s shown */
 	float: right;
 	position: relative;
@@ -78,73 +89,52 @@ h1, h2
 	top: 50px;
 
 	margin: 20px;
-	/*margin-bottom: 30px;*/
-
+	
 	/* give the navArea box some top & bottom padding */ 
 	padding: 0px 10px;
 
-	
-	
-	/*font-size: 24px;*/
-	/*text-align: center;*/
-
 }
 
+/* box to hold all the main content of the page */
 .container
 {
+	/* set background image */
 	background-image: url('../images/sayagata-400px.png');
 	
-	/*background-color: #cccccc;*/
-
-	width: 100%;
-
 	/* min-height added to help with the sticky footer coding */
 	min-height: 100%;
-	/*height: 100%;*/
-
-	/*position: relative;*/
-
+	
 	/* position the header to the top of the browser page */
 	position: absolute;
 	top: 116px;
 	left: 0px;
-	/*right: 0px;*/
-
+	
 	/* make the header span the full width of the page */
 	width: 98%;	
 
 	/* add a small left & right margin to the header area */
-	margin: 0px 15px;
-
-	/*clear: both;*/
-	/*display: block;*/
-	/*margin: 150px 450px 0px 150px;   top margin set below header area, right set to line up with nav right side, bottom (needs to be set to allow for footer area), left set to line up with nameBox area */
+	margin: 0px 15px;	
 }
 
+/* class to style the main content section of the pages */
 .mainContent
 {
+	/* postition the section to the left side and keep additional content floating left until cleared */
 	float: left;
 	width: 650px;
 
-	
-	/*height: 70%;*/
-
-	/*margin: 40px 0px 112px 0px;*/
 	margin: 40px 0px 100px 0px; /* add footer height (60px) plus 40px to bottom margin to have some distance between main content and footer */
-
 	padding: 0px 30px 20px 30px;
 	
+	/* move the content 150px from the left anchor point of the container to line up w/ the name box */
 	position: relative;
 	left: 150px;
-	/*bottom: 62px;*/
-
+	
 	background-color: #ffffff;  /* set background color for header area to white */
 
-	/*background-color: #cccccc;*/
-
-	/*margin: 5px;*/
 }
 
+/* class to style the heading for the main content section of the site */
 .mainContentHeading
 {
 	background-color: #ffffff;  /* set background color for header area to white */
@@ -154,50 +144,48 @@ h1, h2
 	color: #4aaaa5;  /* set font color */
 
 	font-size: 2em;
-
-	/*position: relative;*/
-	/*left: 150px;*/
 }
 
+/* id to position the image on the about page */
 #profilePic
 {
 	float: left;
-	/*display: inline;*/
-	/*margin: 0px 10px 0px 0px;*/
 	margin-right: 20px;
 }
 
+/* add a fun hover action to the picture */
 #profilePic:hover
 {
 	border: 5px solid #4aaaa5;
 }
 
+/* style all paragraph tags for the site */
 p
 {
-	/*float: left;*/
 	display: block;
-	/*margin: 0px;*/
 	padding: 0px 5px;
 	padding-top: 8px;
 	line-height: 150%;
 }
 
+/* style the unorder lists on the site */
 ul
 {
 	list-style: disc;
 	display: inline-block;
-	/*line-height: 150%;*/
 	margin-left: 10px;
 	margin-top: 0px;
 	padding: 2px 6px;
 	padding-left: 12px;
 }
 
+/* style the line items in the lists */
 li
 {
 	padding: 0px 0px 2px 6px;
 }
 
+/* style the quote to highlight them on the site */
 blockquote
 {
 	font-weight: bold;
@@ -206,7 +194,7 @@ blockquote
 	padding-top: 20px;
 }
 
-/* don't need this anymore */
+/* style the images on the portfolio page the same */
 .portfolioImages
 {
 	margin-right: 60px; /*40px*/
@@ -220,6 +208,7 @@ blockquote
 
 }
 
+/* position some of the images to the left on the main content section */
 .portfolioImagesLeft
 {
 	
@@ -227,14 +216,16 @@ blockquote
 	
 }
 
+/* position some of the images to the right on the main content section */
 .portfolioImagesRight
 {
 	
 	float: right;
-	margin-right: 30px; /*40px*/
+	margin-right: 30px;
 	
 }
 
+/* style the labels on the portfolio images the same */
 .portfolioLabels
 {
 	color: #ffffff;
@@ -253,15 +244,13 @@ blockquote
 
 }
 
+/* style the labels on the contact us main section area */
 .contactForm label
 {
-	line-height: 150%;
-	/*padding: 20px 0px 20px 0px;*/
-	/*margin: 20px 0px 20px 0px;*/
-
-	
+	line-height: 150%;	
 }
 
+/* style the input fields for the contact page */
 .contactForm input
 {
 	line-height: 150%;
@@ -270,6 +259,7 @@ blockquote
 	width: 98%
 }
 
+/* style the text box on the contact form */
 .contactForm textarea
 {
 	line-height: 150%;
@@ -277,9 +267,12 @@ blockquote
 	margin: 2px 0px 10px 0px;
 	width: 98%;
 	height: 200px;
+
+	/* add a scroll bar to the box if content gets more than the size of the box area */
 	overflow: auto;
 }
 
+/* style the buttons on the site */
 button
 {
 	color: #ffffff;
@@ -290,17 +283,19 @@ button
 	border: none;
 	text-align: center;
 	font-size: 16px;
-	
 }
 
+/* styles for the button when the user hovers over them */
 button:hover
 {
 	background-color: #6FFFF7;
 	color: #777777;
 }
 
+/* set up the styles for the social content box area */
 .socialContent
 {
+	/* keep the social box to the right of the page */
 	float: right;
 	width: 270px;
 
@@ -308,55 +303,41 @@ button:hover
 
 	padding: 0px 20px 20px 20px;
 
-	/*padding: 20px;*/
-
+	/* set the position of the box to the right side to line up w/ the nav links */
 	position: relative;
 	right: 250px;
-	/*top: 50px;*/
-
+	
 	background-color: #ffffff;  /* set background color for header area to white */
 
 }
 
+/* style the images in the social content box */
 .socialImages
 {
 	padding: 0px;
 	margin: 0px;
 }
 
+/* style the heading for the social box */
 .socialContentHeading
 {
 	text-align: center;
 	font-size: 130%;
 	border-bottom: 2px solid #cccccc;  /* set bottom border to 2 pixels w/ a solid border & color of gray */
-	/*padding: 0px 20px 20px 20px;*/
 	padding-bottom: 20px;
-
-	/*width: 100%;*/
-
 }
 
+/* special styling for the stack overflow icon since it is a different size than the other two icons downloaded */
 #stackOverflowIcon
 {
 	margin-bottom: 5px;
 }
 
-a.socialImages
-{
-	/*padding: 0px;*/
-}
-
-img.socialImages
-{
-	/*margin-right: 0px;*/
-}
-
-
+/* footer area styles */
 footer
 {
 	/* clear float left & right properties */
 	clear: both;
-
 
 	text-align: center;
 	font-size: 70%;
@@ -366,10 +347,6 @@ footer
 	padding: 20px 0px;
 
 	background-color: #777777;
-
-	/*width: 100%;*/
-
-
 
 	/* position the header to the top of the browser page */
 	position: fixed;
@@ -382,5 +359,4 @@ footer
 
 	/* add a small left & right margin to the header area */
 	margin: 0px 15px;
-	/*margin: 60px 15px 0px 15px;*/
 }
